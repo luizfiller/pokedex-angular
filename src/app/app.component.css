@@ -1,0 +1,5 @@
+main {
+    background: url(../assets/pokemons-background.svg);
+    background-size: cover;
+    height: 87vh;
+}

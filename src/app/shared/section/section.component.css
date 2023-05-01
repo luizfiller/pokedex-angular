@@ -1,0 +1,37 @@
+.container-content-section {
+    width: 597px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+    margin-left: 25px;
+}
+
+.content-text h1 {
+    font-size: 2.6em;
+    font-weight: 600;
+    align-items: flex-start;
+}
+
+.content-text p {
+    font-size: 1.4em;
+    text-align: justify;
+}
+
+.container-animation {
+    margin-top: 135px;
+    margin-right: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mouse-animation {
+    width: 140px;
+}

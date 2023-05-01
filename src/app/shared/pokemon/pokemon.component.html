@@ -1,0 +1,32 @@
+<div class="container-cards">
+  <div class="card" *ngFor="let pokemon of getTodosPokemons">
+    <div class="img-pokemon">
+      <img
+        src="{{ pokemon?.status?.sprites?.front_default }}"
+        alt="Imagem Pokemon"
+        style="width: 100px; height: 100px"
+      />
+
+      <div class="tipo-pokemon">
+        <span class="spn-tipo" *ngFor="let tipo of pokemon?.status?.types">{{
+          tipo?.type?.name
+        }}</span>
+      </div>
+    </div>
+
+    <div class="stats">
+      <h1 class="nome-pokemon">
+        {{ pokemon.name }} #{{ pokemon?.status?.id }}
+      </h1>
+
+      <p class="altura-pokemon">Altura: {{ pokemon?.status?.height }}cm</p>
+      <p class="peso-pokemon">Peso: {{ pokemon?.status?.weight }}</p>
+      <p class="ataque-pokemon">Ataque: 90</p>
+    </div>
+
+    <div class="btns">
+      <button>Adicionar</button>
+      <button>Detalhes</button>
+    </div>
+  </div>
+</div>
