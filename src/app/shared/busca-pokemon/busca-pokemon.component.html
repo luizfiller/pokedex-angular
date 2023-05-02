@@ -1,15 +1,23 @@
-<section class="container">
-    <div class="container-header">
-        <header>Qual Pokémon você procura?</header>
-    </div>
+<section class="container" role="region" aria-label="Busca de pokémon">
+  <div class="container-header">
+    <header id="busca-header">Qual Pokémon você procura?</header>
+  </div>
 
-    <div class="search">
-        <button>
-            <img src="../../../assets/search-outline.svg" alt="Lupa para pesquisa">
-        </button>
-        
-        <input type="search" placeholder="Buscar pokémon...">
-    </div>
+  <div class="search">
+    <button aria-labelledby="busca-header">
+      <img src="../../../assets/search-outline.svg" alt="Lupa para pesquisa" />
+    </button>
 
-    <app-pokemon></app-pokemon>
+    <input
+      type="search"
+      placeholder="Buscar pokémon..."
+      #input
+      (keyup)="buscarPokemon(input.value)"
+      aria-describedby="busca-instrucoes"
+    />
+
+    <p id="busca-instrucoes">
+      Digite o nome ou número do pokémon que você deseja buscar.
+    </p>
+  </div>
 </section>

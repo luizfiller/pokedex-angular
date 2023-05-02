@@ -7,7 +7,7 @@ import { map, tap } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class ListarPokemonsService {
-  private readonly url: string = 'https://pokeapi.co/api/v2/pokemon/';
+  private readonly url: string = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=100';
 
   constructor(private http: HttpClient) {}
 
